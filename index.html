@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفصيل مغاسل رخام فاخرة - اتصل الآن 0563645006</title>
+    <!-- Google Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-dark: #111827;
+            --accent-gold: #c5a059;
+            --accent-gold-hover: #b08c46;
+            --whatsapp-green: #25d366;
+            --whatsapp-hover: #20ba5a;
+            --bg-light: #f9fafb;
+            --text-dark: #1f2937;
+            --text-muted: #6b7280;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding-bottom: 80px;
+        }
+
+        /* 1. الشريط العلوي (Header Bar) */
+        .top-header {
+            background-color: var(--primary-dark);
+            color: #fff;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            border-bottom: 2px solid var(--accent-gold);
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .header-btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .header-btn-call {
+            background-color: var(--accent-gold);
+            color: #fff;
+        }
+
+        .header-btn-call:hover {
+            background-color: var(--accent-gold-hover);
+        }
+
+        .header-btn-wa {
+            background-color: var(--whatsapp-green);
+            color: #fff;
+        }
+
+        .header-btn-wa:hover {
+            background-color: var(--whatsapp-hover);
+        }
+
+        /* 2. قسم البانر الرئيسي (Hero Section) */
+        .hero {
+            background: linear-gradient(rgba(17, 24, 39, 0.75), rgba(17, 24, 39, 0.75)), 
+                        url('https://lh3.googleusercontent.com/d/1yKkH9Q4M3V4-Hh9') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .hero h1 span {
+            color: var(--accent-gold);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #e5e7eb;
+        }
+
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn {
+            padding: 14px 32px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .cta-call { background-color: var(--accent-gold); color: #fff; }
+        .cta-wa { background-color: var(--whatsapp-green); color: #fff; }
+
+        /* 3. مميزات الخدمة */
+        .features {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent-gold);
+        }
+
+        .feature-box i {
+            font-size: 2.2rem;
+            color: var(--accent-gold);
+            margin-bottom: 12px;
+        }
+
+        .feature-box h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        /* 4. معرض صور الأعمال (Portfolio Gallery) */
+        .gallery-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-dark);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-gold);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+        }
+
+        .gallery-card-body {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .gallery-card-body h4 {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+        }
+
+        /* 5. أزرار التواصل العائمة (Floating Action Buttons) */
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 9999;
+        }
+
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.6rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .float-wa { background-color: var(--whatsapp-green); }
+        .float-call { background-color: var(--accent-gold); }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.06); }
+            100% { transform: scale(1); }
+        }
+
+        /* 6. الشريط الثابت للأسفل للجوال فقط */
+        .bottom-nav {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            padding: 10px 15px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
+            z-index: 999;
+        }
+
+        .bottom-nav-btn {
+            flex: 1;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .header-actions { display: none; }
+            .bottom-nav { display: flex; gap: 10px; }
+            .hero h1 { font-size: 1.8rem; }
+            .hero p { font-size: 1rem; }
+            .floating-buttons { bottom: 70px; left: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="top-header">
+        <div class="logo">
+            <i class="fas fa-gem"></i> تفصيل مغاسل رخام
+        </div>
+        <div class="header-actions">
+            <a href="tel:0563645006" class="header-btn header-btn-call">
+                <i class="fas fa-phone-alt"></i> 0563645006
+            </a>
+            <a href="https://wa.me/966563645006" class="header-btn header-btn-wa" target="_blank">
+                <i class="fab fa-whatsapp"></i> واتساب
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>أرقى تصاميم <span>مغاسل الرخام التفصيل</span></h1>
+        <p>تصاميم فاخرة للمجالس والحمامات بالرخام الطبيعي والصناعي حسب الطلب والمقاس بدقة عالية وتنفيد محترف.</p>
+        <div class="hero-cta">
+            <a href="tel:0563645006" class="cta-btn cta-call">
+                <i class="fas fa-phone-alt"></i> اتصل بنا الآن
+            </a>
+            <a href="https://wa.me/966563645006" class="cta-btn cta-wa" target="_blank">
+                <i class="fab fa-whatsapp"></i> تواصل عبر الواتساب
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-box">
+            <i class="fas fa-drafting-compass"></i>
+            <h3>تصاميم حصرية</h3>
+            <p>نقوم بتفصيل أحدث الموديلات المودرن والكلاسيك مع إضاءات ليد مخفية ومرايا مميزة.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-layer-group"></i>
+            <h3>خامات فائقة</h3>
+            <p>نوفر أفضل أنواع الرخام الطبيعي والصناعي المقاوم للماء والبقع والخدوش.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-truck-loading"></i>
+            <h3>توريد وتركيب</h3>
+            <p>دقة عالية في المواعيد مع فريق تركيب محترف وضمان شامل على العمل.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="section-title">
+            <h2>معرض أعمالنا الفاخرة</h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="Hh9.png" alt="مغسلة رخام مزدوجة فاخرة">
+                <div class="gallery-card-body">
+                    <h4>مغسلة رخام حوضين مودرن مع رف سفلي</h4>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="Hh8.png" alt="مغسلة رخام طبيعي حوضين فوق السطح">
+                <div class="gallery-card-body">
+                    <h4>تفصيل مغسلة رخام حوضين أسطوانية</h4>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="Hh7.png" alt="مغسلة رخام جدارية فاخرة">
+                <div class="gallery-card-body">
+                    <h4>تفصيل مغسلة رخام عناب ملكية للمجالس</h4>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="Hh5.png" alt="مغسلة رخام مودرن حوضين">
+                <div class="gallery-card-body">
+                    <h4>تفصيل مغسلة رخام طبيعي سفلي حوضين</h4>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="Hh6.png" alt="تفصيل مغسلة رخام دائرية">
+                <div class="gallery-card-body">
+                    <h4>تصميم مغسلة رخام مع حوض بارز وإضاءة</h4>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="Hh2.png" alt="تفصيل مغسلة رخام أسود فاخرة">
+                <div class="gallery-card-body">
+                    <h4>مغسلة رخام أسود مع خلفية شريحة مميزة</h4>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="Hh4.png" alt="مغسلة رخام دائرية ذهبية">
+                <div class="gallery-card-body">
+                    <h4>مغسلة رخام أحواض بيضاوية مع خلاطات ذهبية</h4>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="Hh1.webp" alt="مغسلة رخام مع حوضين دائرية">
+                <div class="gallery-card-body">
+                    <h4>تفصيل مغسلة رخام صناعي مع مرايا مذهبة</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Buttons (عائمة) -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/966563645006" class="float-btn float-wa" target="_blank" title="تواصل واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:0563645006" class="float-btn float-call" title="اتصل الآن">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- Bottom Mobile Nav -->
+    <div class="bottom-nav">
+        <a href="tel:0563645006" class="bottom-nav-btn header-btn-call">
+            <i class="fas fa-phone-alt"></i> اتصال سريع
+        </a>
+        <a href="https://wa.me/966563645006" class="bottom-nav-btn header-btn-wa" target="_blank">
+            <i class="fab fa-whatsapp"></i> واتساب
+        </a>
+    </div>
+
+</body>
+</html>
